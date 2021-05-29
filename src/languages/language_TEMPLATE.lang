@@ -1,0 +1,380 @@
+Informations:
+  Language: TEMPLATE
+Settings:
+  Options:
+  Permissions:
+
+
+
+
+
+ARG_CFG_RELOADING: "&bReloading config..."
+ARG_CFG_RELOADED: "&aConfig reloaded"
+ARG_CFG_RECREATING: "&bRecreating config..."
+ARG_CFG_RECREATED: "&aConfig recreated"
+
+ARG_CFG_GET_SECTION: "%break%&bConfiguration file%break%&eName: &d{ARGUMENT_2}%break%&eType: &dSection%break%&eKeys: &d{EXTRA_0}"
+ARG_CFG_GET_VALUE: "%break%&bConfiguration file%break%&eKey: &d{ARGUMENT_2}%break%&eType: &d{EXTRA_0}%break%&eValue: &r{CONFIG_{ARGUMENT_2}}"
+ARG_CFG_GET_CANT_FIND_VALUE: "&cCan't find &e{ARGUMENT_2} &cin configuration file"
+
+ARG_CFG_EDIT: "&aNew value for key &e{ARGUMENT_2} &ais &e{EXTRA_0}"
+ARG_CFG_EDIT_LIST_KEY_IS_SECTION: "&e{ARGUMENT_3} &cis a configuration section"
+ARG_CFG_EDIT_LIST_REMOVE_ONLY_INTEGER: "&e{ARGUMENT_5} &cis no Integer"
+ARG_CFG_EDIT_LIST_REMOVED: "&aRemoved key &e{ARGUMENT_5} ({EXTRA_0}) &afrom the list &e{ARGUMENT_3}"
+ARG_CFG_EDIT_LIST_REMOVE_DOESNT_CONTAIN: "&cList &e{ARGUMENT_3} &cdoesn't contain a value with index &e{ARGUMENT_5}"
+ARG_CFG_EDIT_LIST_ADDED: "&aAdded key &e{EXTRA_0} &ato the list &e{ARGUMENT_3}"
+
+ARG_CFG_TMP_LIST_EMPTY: "Nothing"
+ARG_CFG_TMP_LIST_ENTRY: "&7, &e{EXTRA_0} &7[&e{EXTRA_1}&7]"
+ARG_CFG_TMP_LIST_ENTRY_LIST: "&7, ({EXTRA_0}) &b{EXTRA_1}"
+ARG_CFG_TMP_CHANGED_VALUES: "&aChanged keys: &e{EXTRA_0}"
+ARG_CFG_TMP_CLEARED: "&aCleared temporary config changes"
+ARG_CFG_TMP_NOTHING_TO_CLEAR: "&cNothing to clear"
+ARG_CFG_TMP_SAVED_CHANGES: "&aSaved &e{EXTRA_0} &achange(s)"
+ARG_CFG_TMP_NOTHING_TO_SAVE: "&cNothing to save"
+ARG_CFG_TMP_REMOVED_VALUE: "&aRemoved key &e{ARGUMENT_3} &afrom temporary changes"
+ARG_CFG_TMP_DOES_NOT_CONTAIN: "&cNo key &e{ARGUMENT_3} &cin temporary changes to remove"
+ARG_CFG_TMP_NOTHING_TO_REMOVE: "&cNothing to remove"
+
+ARG_CFG_TREE_FULL: "%break%&bConfiguration file"
+ARG_CFG_TREE_SECTION: "%break%&bConfiguration file &e{ARGUMENT_2}"
+ARG_CFG_TREE_NO_SECTION: "&e{ARGUMENT_2} &cis no configuration section"
+
+ARG_CFG_TAB_NEW_VALUE: "<NewValue>"
+ARG_CFG_TAB_INDEX_OF_VALUE: "<IndexOfValue>"
+
+
+
+ARG_CONFIRM_NOTHING: "&cNo pending confirmations"
+ARG_CONFIRM_TIME_IS_OVER: "&cConfirmation expired"
+
+
+
+ARG_DEBUG_NOTIFY_ENABLED: "&aYou enabled notifications when a error gets catched"
+ARG_DEBUG_NOTIFY_DISABLED: "&cYou disabled notifications when a error gets catched"
+ARG_DEBUG_RUNNING_DISABLED: "&cErrors while running no longer get catched"
+ARG_DEBUG_RUNNING_ENABLED: "&aErrors while running now get catched"
+ARG_DEBUG_RUNNING_GET: "{EXTRA_0}"
+ARG_DEBUG_RUNNING_GET_INVALID: "&cNo exception with index &e{ARGUMENT_3} &ccatched"
+ARG_DEBUG_RUNNING_LIST: "%break%&bList with all errors while plugin is used:%break%{EXTRA_0}"
+ARG_DEBUG_RUNNING_LIST_EMPTY: "&aNo errors catched since plugin is running"
+ARG_DEBUG_RUNNING_PRINT: "{EXTRA_0}"
+ARG_DEBUG_RUNNING_PRINT_INVALID: "&cNo exception with index &e{ARGUMENT_3} &ccatched"
+ARG_DEBUG_RUNNING_PRINT_LINE1: "%break%&e{EXTRA_0}"
+ARG_DEBUG_RUNNING_PRINT_LINE2: "%break%&7{EXTRA_0}"
+ARG_DEBUG_STARTUP_DISABLED: "&cErrors while plugin starts up no longer get catched"
+ARG_DEBUG_STARTUP_ENABLED: "&aErrors while plugin starts up now get catched"
+ARG_DEBUG_STARTUP_GET: "{EXTRA_0}"
+ARG_DEBUG_STARTUP_GET_INVALID: "&cNo exception with index &e{ARGUMENT_3} &ccatched"
+ARG_DEBUG_STARTUP_LIST: "%break%&bList with all errors while plugin started up:%break%{EXTRA_0}"
+ARG_DEBUG_STARTUP_LIST_EMPTY: "&aNo errors catched while plugin started up"
+ARG_DEBUG_STARTUP_PRINT: "{EXTRA_0}"
+ARG_DEBUG_STARTUP_PRINT_INVALID: "&cNo exception with index &e{ARGUMENT_3} &ccatched"
+ARG_DEBUG_STARTUP_PRINT_LINE1: "%break%&e{EXTRA_0}"
+ARG_DEBUG_STARTUP_PRINT_LINE2: "%break%&7{EXTRA_0}"
+ARG_DEBUG_TIMINGS_DISABLED: "&cTimings no longer get recorded"
+ARG_DEBUG_TIMINGS_ENABLED: "&aTimings now get recorded"
+ARG_DEBUG_TIMINGS_GET: "{EXTRA_0}: {EXTRA_1}"
+ARG_DEBUG_TIMINGS_GET_INVALID: "&cNo timing with key &e{ARGUMENT_3} &crecorded"
+ARG_DEBUG_TIMINGS_LIST: "%break%&bList with all timings:%break%{EXTRA_0}"
+ARG_DEBUG_TIMINGS_LIST_EMPTY: "&cNo timings recorded"
+
+
+
+ARG_HELP: "%break%&dHelp for &e{EXTRA_0} &7- &dPage &e{EXTRA_1} &dof &e{EXTRA_2}%break%{EXTRA_3}"
+ARG_HELP_INVALID_PAGE: "&e{EXTRA_0} &cis no valid page"
+ARG_HELP_INVALID_ARG: "&e{EXTRA_0} &cis no valid argument"
+ARG_HELP_DETAILS_ALIAS: ", {EXTRA_0}"
+ARG_HELP_DETAILS_PERMISSION: ", {EXTRA_0}"
+ARG_HELP_DETAILS_TYPE: ", {EXTRA_0}"
+ARG_HELP_DETAILS_PAGE: "%break%&bDescription&7: &e{EXTRA_0}%break%&bAliases&7: &e{EXTRA_1}%break%&bPermissions&7: &e{EXTRA_2}%break%&bNeed all permissions&7: &e{EXTRA_3}%break%&bTypes&7: &e{EXTRA_4}%break%&bHas to be equal&7: &e{EXTRA_5}%break%&bIs optional&7: &e{EXTRA_6}"
+ARG_HELP_EMPTY: "Empty"
+
+
+
+ARG_LANG_NEW_LANGUAGE_CREATED: "&aCreated language &e{ARGUMENT_2}"
+ARG_LANG_NEW_ALREADY_EXISTS: "&cLanguage &e{ARGUMENT_2} &calready exists"
+ARG_LANG_NEW_ENTER_NAME: "&cPlease enter a language name"
+
+ARG_LANG_INFO_SPECIFIC: "%break%&bLanguage info%break%{EXTRA_0}"
+ARG_LANG_INFO_NOT_LOADED: "&cLanguage &e{ARGUMENT_2} &cisn't loaded"
+ARG_LANG_INFO_DEFAULT: "%break%&bDefault language info%break%{EXTRA_0}"
+
+ARG_LANG_RELOADING: "&bReloading language &e{ARGUMENT_2}&b..."
+ARG_LANG_RELOADED: "&aLanguage reloaded"
+ARG_LANG_RELOADING_DEFAULT: "&bReloading default language &e{CONFIG_Language}&b..."
+ARG_LANG_RELOADED_DEFAULT: "&aDefault language reloaded"
+ARG_LANG_RELOAD_NOT_LOADED: "&cLanguage &e{ARGUMENT_2} &cisn't loaded"
+
+ARG_LANG_RESETTING: "&bResetting language &e{ARGUMENT_2}&b..."
+ARG_LANG_RESETTET: "&aLanguage resetted"
+ARG_LANG_RESETTING_DEFAULT: "&bResetting default language &e{CONFIG_Language}&b..."
+ARG_LANG_RESETTET_DEFAULT: "&aDefault language resetted"
+ARG_LANG_RESET_NOT_LOADED: "&cLanguage &e{ARGUMENT_2} &cisn't loaded"
+
+ARG_LANG_GET_SECTION: "%break%&bLanguage file%break%&eName: &d{ARGUMENT_3}%break%&eType: &dSection%break%&eKeys: &d{EXTRA_0}"
+ARG_LANG_GET_VALUE: "%break%&bLanguage file%break%&eKey: &d{ARGUMENT_3}%break%&eType: &d{EXTRA_0}%break%&eValue: &r{CONFIG_{ARGUMENT_3}}"
+ARG_LANG_GET_CANT_FIND_VALUE: "&cCan't find &e{ARGUMENT_3} &cin language file &e{ARGUMENT_2}"
+ARG_LANG_GET_NOT_LOADED: "&cLanguage &e{ARGUMENT_2} &cisn't loaded"
+
+ARG_LANG_LIST_ENTRY: "&7, &d{EXTRA_0}"
+ARG_LANG_LIST_LANGUAGES: "&eAll languages: &d{EXTRA_0}"
+
+ARG_LANG_EDIT: "&aEdited key &e{ARGUMENT_3} &ain language &e{ARGUMENT_2}"
+ARG_LANG_EDIT_LIST: "&aEdited key &e{ARGUMENT_4} &ain language &e{ARGUMENT_2}"
+ARG_LANG_EDIT_LIST_KEY_IS_SECTION: "&e{ARGUMENT_4} &cis a configuration section"
+
+ARG_LANG_SET_CUSTOM: "&aYou set your language to &e{ARGUMENT_3}"
+ARG_LANG_SET_DEFAULT: "&aYou set the default language to &e{ARGUMENT_3}"
+ARG_LANG_SET_CUSTOM_RESET: "&aYou have reset your language"
+ARG_LANG_SET_NOT_LOADED: "&cLanguage &e{ARGUMENT_3} &cisn't loaded"
+
+ARG_LANG_TMP_CHANGED_VALUES: "&aChanged keys: &e{EXTRA_0}"
+ARG_LANG_TMP_CLEARED: "&aCleared temporary language changes"
+ARG_LANG_TMP_NOTHING_TO_CLEAR: "&cNothing to clear"
+ARG_LANG_TMP_LIST_EMPTY: "Nothing"
+ARG_LANG_TMP_LIST_ENTRY: "&7, &e{EXTRA_0} &7[&e{EXTRA_1}&7]"
+ARG_LANG_TMP_LIST_ENTRY_LIST: "&7, ({EXTRA_0}) &b{EXTRA_1}"
+ARG_LANG_TMP_SAVED_CHANGES: "&aSaved &e{EXTRA_0} &achange(s)"
+ARG_LANG_TMP_NOTHING_TO_SAVE: "&cNothing to save"
+ARG_LANG_TMP_REMOVED_VALUE: "&aRemoved key &e{ARGUMENT_3} &afrom temporary changes"
+ARG_LANG_TMP_DOES_NOT_CONTAIN: "&cNo key &e{ARGUMENT_3} &cin temporary changes to remove"
+ARG_LANG_TMP_NOTHING_TO_REMOVE: "&cNothing to remove"
+
+ARG_LANG_TREE_FULL: "%break%&bLanguage file &e{ARGUMENT_2}"
+ARG_LANG_TREE_SECTION: "%break%&bLanguage file &e{ARGUMENT_2} - {ARGUMENT_3}"
+ARG_LANG_TREE_NO_SECTION: "&e{ARGUMENT_3} &cis no section in language &e{ARGUMENT_2}"
+
+ARG_LANG_TAB_NEW_VALUE: "<NewValue>"
+ARG_LANG_TAB_INDEX_OF_VALUE: "<IndexOfValue>"
+ARG_LANG_TAB_NEW_LANGUAGE: "<NewLanguage>"
+
+
+
+ARG_NEWS_LIST: "%break%&bChangelog list:%break% "
+ARG_NEWS_LIST_VERSION: "&eVersion: &d"
+ARG_NEWS_LIST_PUBLISHED: " &8- &ePublished: &d"
+ARG_NEWS_GET: "%break%&bChangelog &e{EXTRA_0}%break%&eVersion: &d{EXTRA_1}%break%&ePublished: &d{EXTRA_2}%break%&eChanges: &d{EXTRA_3}"
+ARG_NEWS_NO_CHANGES_FOUND: "&cNo changes found for version/date &e{ARGUMENT_1}"
+ARG_NEWS_NEWEST_CHANGE_NOT_FOUND: "&cCan't find changelog for newest version"
+
+
+
+ARG_STOP_CONFIRM: "&4&lDo you really want to stop the plugin?%break%&cConfirm with &7/template confirm%break%&cYou have &e{EXTRA_0} &cseconds to confirm..."
+
+
+
+ARG_UF_RESETTING: "&bDeleting user formats..."
+ARG_UF_RESETTET: "&aDeleted user formats"
+
+ARG_UF_GET_SECTION: "%break%&bUser formats file%break%&eName: &d{ARGUMENT_2}%break%&eType: &dSection%break%&eKeys: &d{EXTRA_0}"
+ARG_UF_GET_VALUE: "%break%&bUser formats file%break%&eKey: &d{ARGUMENT_2}%break%&eType: &d{EXTRA_0}%break%&eValue: &r{CONFIG_Translations.{ARGUMENT_2}}"
+ARG_UF_GET_CANT_FIND_VALUE: "&cCan't find &e{ARGUMENT_2} &cin user formats"
+
+ARG_UF_EDIT: "&aNew value for key &e{ARGUMENT_2} &ais &e{EXTRA_0}"
+ARG_UF_EDIT_LIST_KEY_IS_SECTION: "&e{ARGUMENT_3} &cis a section"
+ARG_UF_EDIT_LIST_REMOVE_ONLY_INTEGER: "&e{ARGUMENT_5} &cis no Integer"
+ARG_UF_EDIT_LIST_REMOVED: "&aRemoved key &e{EXTRA_0} &afrom the list &e{ARGUMENT_3}"
+ARG_UF_EDIT_LIST_REMOVE_DOESNT_CONTAIN: "&cList &e{ARGUMENT_3} &cdoesn't contain a value with index &e{ARGUMENT_5}"
+ARG_UF_EDIT_LIST_ADDED: "&aAdded key &e{EXTRA_0} &ato the list &e{ARGUMENT_3}"
+
+ARG_UF_TMP_CHANGED_VALUES: "&aChanged keys: &e{EXTRA_0}"
+ARG_UF_TMP_CLEARED: "&aCleared temporary user formats changes"
+ARG_UF_TMP_NOTHING_TO_CLEAR: "&cNothing to clear"
+ARG_UF_TMP_LIST_EMPTY: "Nothing"
+ARG_UF_TMP_LIST_ENTRY: "&7, &e{EXTRA_0} &7[&e{EXTRA_1}&7]"
+ARG_UF_TMP_LIST_ENTRY_LIST: "&7, ({EXTRA_0}) &b{EXTRA_1}"
+ARG_UF_TMP_SAVED_CHANGES: "&aSaved &e{EXTRA_0} &achange(s)"
+ARG_UF_TMP_NOTHING_TO_SAVE: "&cNothing to save"
+ARG_UF_TMP_REMOVED_VALUE: "&aRemoved key &e{ARGUMENT_3} &afrom temporary changes"
+ARG_UF_TMP_DOES_NOT_CONTAIN: "&cNo key &e{ARGUMENT_3} &cin temporary changes to remove"
+ARG_UF_TMP_NOTHING_TO_REMOVE: "&cNothing to remove"
+
+ARG_UF_TREE_FULL: "%break%&bUser formats"
+ARG_UF_TREE_SECTION: "%break%&bUser formats &e&l{ARGUMENT_2}"
+ARG_UF_TREE_NO_SECTION: "&e{ARGUMENT_2} &cis no section"
+
+ARG_UF_TAB_NEW_VALUE: "<NewValue>"
+ARG_UF_TAB_INDEX_OF_VALUE: "<IndexOfValue>"
+
+
+
+CMD_TEMPLATE_NO_PERMISSION: "&cYou don't have permissions to use this command"
+
+
+
+DEBUG_TIMINGS_NOTIFY: "&bTiming recorded"
+DEBUG_TIMINGS_LIST_ENTRY: "%break%&d{EXTRA_0}&7: &e{EXTRA_1} seconds"
+DEBUG_TIMINGS_PLUGIN_START: "Time the plugin needed to fully start"
+DEBUG_TIMINGS_COMMAND_HANDLER: "Time it took to register all commands"
+DEBUG_TIMINGS_EVENT_MANAGER: "Time it took to register all events"
+DEBUG_TIMINGS_CONFIG: "Time it took to load the configuration file"
+DEBUG_TIMINGS_LANGUAGE_SETTINGS: "Time it took to load all language files"
+DEBUG_TIMINGS_CHANGELOG_MANAGER: "Time it took to load all changelogs"
+DEBUG_TIMINGS_PERMISSION_HANDLER: "Time it took to load all permissions"
+DEBUG_TIMINGS_UPDATE_CHECKER: "Time it took to check for updates"
+DEBUG_STARTUP_NOTIFY: "&bStart up exception catched"
+DEBUG_STARTUP_LIST_ENTRY: "%break%&7{EXTRA_0} - &b{EXTRA_1}&7:%break%&dName&7: &e{EXTRA_2}%break%&dMessage&7: &e{EXTRA_3}"
+DEBUG_RUNNING_NOTIFY: "&bRunning exception catched"
+DEBUG_RUNNING_LIST_ENTRY: "%break%&7{EXTRA_0} - &b{EXTRA_1}&7:%break%&dName&7: &e{EXTRA_2}%break%&dMessage&7: &e{EXTRA_3}"
+
+
+
+DESCRIPTION_ARG_CFG: "Get or edit values of the configuration file"
+DESCRIPTION_ARG_CFG_EDIT: "Edit a key. Changes are saved in a temporary list and need to be saved manually"
+DESCRIPTION_ARG_CFG_EDIT_LIST: "Change a list"
+DESCRIPTION_ARG_CFG_EDIT_LIST_KEY: "List key"
+DESCRIPTION_ARG_CFG_EDIT_LIST_KEY_NULL: "Remove value"
+DESCRIPTION_ARG_CFG_EDIT_LIST_KEY_NULL_INDEX: "Remove a value from a list. To get the indexes check the temporary changes"
+DESCRIPTION_ARG_CFG_EDIT_LIST_KEY_VALUE: "Edit a key in a list"
+DESCRIPTION_ARG_CFG_EDIT_KEY: "Key"
+DESCRIPTION_ARG_CFG_EDIT_KEY_NULL: "Remove a key"
+DESCRIPTION_ARG_CFG_EDIT_KEY_VALUE: "Edit a key"
+DESCRIPTION_ARG_CFG_GET: "Get key"
+DESCRIPTION_ARG_CFG_GET_VALUE: "Get informations and value of a specific key"
+DESCRIPTION_ARG_CFG_RELOAD: "Reload the configuration file"
+DESCRIPTION_ARG_CFG_RESET: "Reset configuration file to default"
+DESCRIPTION_ARG_CFG_TMP: "Temporary list of edited values"
+DESCRIPTION_ARG_CFG_TMP_CLEAR: "Clear the list"
+DESCRIPTION_ARG_CFG_TMP_LIST: "List all edited keys"
+DESCRIPTION_ARG_CFG_TMP_REMOVE: "Remove"
+DESCRIPTION_ARG_CFG_TMP_REMOVE_KEY: "Remove a edited key from the list"
+DESCRIPTION_ARG_CFG_TMP_SAVE: "Save all edited keys to the configuration"
+DESCRIPTION_ARG_CFG_TREE: "List all values of the configuration file"
+DESCRIPTION_ARG_CFG_TREE_KEY: "List all values of a configuration section in the configuration file"
+
+DESCRIPTION_ARG_CONFIRM: "Confirm a action"
+
+DESCRIPTION_ARG_DEBUG: "Get timings or exceptions"
+DESCRIPTION_ARG_DEBUG_NOTIFY: "Notification when something gets debugged"
+DESCRIPTION_ARG_DEBUG_NOTIFY_DISABLE: "Disable notifications for debugger"
+DESCRIPTION_ARG_DEBUG_NOTIFY_ENABLE: "Enable notifications for debugger"
+DESCRIPTION_ARG_DEBUG_RUNNING: "Exceptions while plugin is running"
+DESCRIPTION_ARG_DEBUG_RUNNING_FALSE: "Disable catching exceptions while plugin is running"
+DESCRIPTION_ARG_DEBUG_RUNNING_TRUE: "Enable catching exceptions while plugin is running"
+DESCRIPTION_ARG_DEBUG_RUNNING_GET: "Get running"
+DESCRIPTION_ARG_DEBUG_RUNNING_GET_INDEX: "Get informations about a catched exception"
+DESCRIPTION_ARG_DEBUG_RUNNING_LIST: "List all catched exceptions while plugin is running"
+DESCRIPTION_ARG_DEBUG_RUNNING_PRINT: "Print running"
+DESCRIPTION_ARG_DEBUG_RUNNING_PRINT_INDEX: "Print stacktrace of a catched exception"
+DESCRIPTION_ARG_DEBUG_RUNNING_PRINT_TO_CONSOLE: "Print stacktrace also in console. Useful if normal print doesnt work"
+DESCRIPTION_ARG_DEBUG_STARTUP: "Exceptions at start up"
+DESCRIPTION_ARG_DEBUG_STARTUP_FALSE: "Disable catching exceptions at start up"
+DESCRIPTION_ARG_DEBUG_STARTUP_TRUE: "Enable catching exceptions at start up"
+DESCRIPTION_ARG_DEBUG_STARTUP_GET: "Get start up"
+DESCRIPTION_ARG_DEBUG_STARTUP_GET_INDEX: "Get informations about a catched exception"
+DESCRIPTION_ARG_DEBUG_STARTUP_LIST: "List all catched exceptions at start up"
+DESCRIPTION_ARG_DEBUG_STARTUP_PRINT: "Print start up"
+DESCRIPTION_ARG_DEBUG_STARTUP_PRINT_INDEX: "Print stacktrace of a catched exception"
+DESCRIPTION_ARG_DEBUG_STARTUP_PRINT_TO_CONSOLE: "Print stacktrace also in console. Useful if normal print doesnt work"
+DESCRIPTION_ARG_DEBUG_TIMINGS: "Timings recorded"
+DESCRIPTION_ARG_DEBUG_TIMINGS_FALSE: "Disable recording of timings"
+DESCRIPTION_ARG_DEBUG_TIMINGS_TRUE: "Enable recording of timings"
+DESCRIPTION_ARG_DEBUG_TIMINGS_GET: "Get timing"
+DESCRIPTION_ARG_DEBUG_TIMINGS_GET_INDEX: "Get informations about a recorded timing"
+DESCRIPTION_ARG_DEBUG_TIMINGS_LIST: "List all recorded timings"
+
+
+
+DESCRIPTION_ARG_HELP: "Get help for all the commands of the plugin"
+DESCRIPTION_ARG_HELP_PAGE: "Get help page"
+DESCRIPTION_ARG_HELP_ARGUMENT: "Get help for argument"
+DESCRIPTION_ARG_HELP_ARGUMENT_PAGE: "Get help page for argument"
+
+DESCRIPTION_ARG_INFO: "Get some informations about the plugin"
+
+DESCRIPTION_ARG_NEWS: "Get informations about the latest or a specific version of the plugin"
+DESCRIPTION_ARG_NEWS_LIST: "List all available changes"
+DESCRIPTION_ARG_NEWS_SPECIFIC: "Get change by version or date"
+
+DESCRIPTION_ARG_STOP: "Disable the plugin"
+
+DESCRIPTION_ARG_LANG: "Language management argument"
+DESCRIPTION_ARG_LANG_EDIT: "Edit a key. Changes are saved in a temporary list and need to be saved manually"
+DESCRIPTION_ARG_LANG_EDIT_LANGUAGE: "Language to edit"
+DESCRIPTION_ARG_LANG_EDIT_LIST: "Change a list"
+DESCRIPTION_ARG_LANG_EDIT_LIST_KEY: "List key"
+DESCRIPTION_ARG_LANG_EDIT_LIST_KEY_NULL: "Remove value"
+DESCRIPTION_ARG_LANG_EDIT_LIST_KEY_NULL_INDEX: "Remove a value from a list. To get the indexes check the temporary changes"
+DESCRIPTION_ARG_LANG_EDIT_LIST_KEY_VALUE: "Edit a key in a list"
+DESCRIPTION_ARG_LANG_EDIT_KEY: "Key"
+DESCRIPTION_ARG_LANG_EDIT_KEY_NULL: "Remove a key"
+DESCRIPTION_ARG_LANG_EDIT_KEY_VALUE: "Edit a key"
+DESCRIPTION_ARG_LANG_GET: "Get informations and value of a specific key"
+DESCRIPTION_ARG_LANG_GET_LANGUAGE: "Get from language"
+DESCRIPTION_ARG_LANG_GET_VALUE: "Get value"
+DESCRIPTION_ARG_LANG_INFO: "Get informations"
+DESCRIPTION_ARG_LANG_INFO_LANGUAGE: "Get informations about a language"
+DESCRIPTION_ARG_LANG_LIST: "List all available languages"
+DESCRIPTION_ARG_LANG_NEW: "Create a new language"
+DESCRIPTION_ARG_LANG_NEW_LANGUAGE: "Name for new language"
+DESCRIPTION_ARG_LANG_RELOAD: "Reload default language"
+DESCRIPTION_ARG_LANG_RELOAD_LANGUAGE: "Reload a language"
+DESCRIPTION_ARG_LANG_RESET: "Reset default language to default"
+DESCRIPTION_ARG_LANG_RESET_LANGUAGE: "Reset a language to default"
+DESCRIPTION_ARG_LANG_SET: "Set language"
+DESCRIPTION_ARG_LANG_SET_CUSTOM: "Set custom language"
+DESCRIPTION_ARG_LANG_SET_CUSTOM_NULL: "Reset custom language"
+DESCRIPTION_ARG_LANG_SET_CUSTOM_LANGUAGE: "Set custom language"
+DESCRIPTION_ARG_LANG_SET_DEFAULT: "Set language for all"
+DESCRIPTION_ARG_LANG_SET_DEFAULT_LANGUAGE: "Set default language for all"
+DESCRIPTION_ARG_LANG_TMP: "Temporary list of edited values"
+DESCRIPTION_ARG_LANG_TMP_CLEAR: "Clear the list"
+DESCRIPTION_ARG_LANG_TMP_LIST: "List all edited keys"
+DESCRIPTION_ARG_LANG_TMP_REMOVE: "Remove"
+DESCRIPTION_ARG_LANG_TMP_REMOVE_KEY: "Remove a edited key from the list"
+DESCRIPTION_ARG_LANG_TMP_SAVE: "Save all edited keys to the language"
+DESCRIPTION_ARG_LANG_TREE: "List all values of the default language file"
+DESCRIPTION_ARG_LANG_TREE_LANGUAGE: "List all values of the language file"
+DESCRIPTION_ARG_LANG_TREE_KEY: "List all values of a configuration section in the language file"
+
+DESCRIPTION_ARG_UF: "User Formats Argument"
+DESCRIPTION_ARG_UF_EDIT: "Edit a key. Changes are saved in a temporary list and need to be saved manually"
+DESCRIPTION_ARG_UF_EDIT_LIST: "Change a list"
+DESCRIPTION_ARG_UF_EDIT_LIST_KEY: "List key"
+DESCRIPTION_ARG_UF_EDIT_LIST_KEY_NULL: "Remove value"
+DESCRIPTION_ARG_UF_EDIT_LIST_KEY_NULL_INDEX: "Remove a value from a list. To get the indexes check the temporary changes"
+DESCRIPTION_ARG_UF_EDIT_LIST_KEY_VALUE: "Edit a key in a list"
+DESCRIPTION_ARG_UF_EDIT_KEY: "Key"
+DESCRIPTION_ARG_UF_EDIT_KEY_NULL: "Remove a key"
+DESCRIPTION_ARG_UF_EDIT_KEY_VALUE: "Edit a key"
+DESCRIPTION_ARG_UF_GET: "Get key"
+DESCRIPTION_ARG_UF_GET_VALUE: "Get informations and value of a specific key"
+DESCRIPTION_ARG_UF_RESET: "Reset user formats"
+DESCRIPTION_ARG_UF_TMP: "Temporary list of edited values"
+DESCRIPTION_ARG_UF_TMP_CLEAR: "Clear the list"
+DESCRIPTION_ARG_UF_TMP_LIST: "List all edited keys"
+DESCRIPTION_ARG_UF_TMP_REMOVE: "Remove"
+DESCRIPTION_ARG_UF_TMP_REMOVE_KEY: "Remove a edited key from the list"
+DESCRIPTION_ARG_UF_TMP_SAVE: "Save all edited keys to the user formats"
+DESCRIPTION_ARG_UF_TREE: "List all values of the user formats file"
+DESCRIPTION_ARG_UF_TREE_KEY: "List all values of a configuration section in the user formats file"
+
+DESCRIPTION_CMD_TEMPLATE: "Template command for the TEMPLATE Plugin"
+
+
+
+DISABLING_PLUGIN: "&cDisabling TEMPLATE Plugin..."
+
+
+
+EVENT_PCP_WAIT: "&cWait &e{EXTRA_0} &csecond(s)"
+
+
+SYNTAX_MESSAGE: "&cWrong syntax. Correct usage: {EXTRA_0}"
+SYNTAX_COLOR: "&e"
+SYNTAX_DESCRIPTION_COLOR: " &7- &b"
+
+
+
+UPDATER_NEW_VERSION_FOUND: "%break%&bTEMPLATE Plugin:%break%&aNew version &e{EXTRA_0} &afound. Download it at &e{EXTRA_1}"
+
+
+
+TREE_EMPTY: "&eNo values set"
+
+
+
+VALUE_TRUE: "true"
+VALUE_FALSE: "false"
+VALUE_NO_INTEGER: "&e{EXTRA_0} &cis no integer"

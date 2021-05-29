@@ -1,0 +1,10 @@
+main: net.haffel.PL.TEMPLATE
+name: TEMPLATE
+version: 1.1
+author: Haffel
+depend: [MultiLanguages]
+description: "Template Plugin v1.1. Last updated 26.5.2021"
+website: https://haffel.jimdofree.com/plugins/template
+
+commands:
+  template:
