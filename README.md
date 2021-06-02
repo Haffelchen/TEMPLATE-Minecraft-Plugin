@@ -32,4 +32,4 @@ That plugin is also made by me. More informations coming soon
 ### More Informations:
 
 For more informations about the Template plugin, please visit my Website: https://haffel.jimdofree.com/plugins/template
-Currently it's only in German but im working on a full English translation. As soon as it's done i will add it here on Spigot and also on the my Website
+Currently it's only in German but im working on a full English translation. As soon as it's done i will add it here on Github and also on my Website
